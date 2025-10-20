@@ -22,7 +22,7 @@ Please download the dataset using the provided link in the original [paper](http
 Place the metadata file in the `dataset.csv` file in the `data` folder.
 Place the given ground truth bounding boxes in `GRAZPEDWRI-DX/folder_structure/yolov5/labels` in the `data/gt_bboxes` folder.
 
-For the generation of the AO code mapping to their bounding boxes, bone segmentation masks are needed. Please download them using the provided link in the original [paper](https://link.springer.com/article/10.1007/s11548-024-03315-8) and store them in `data/raw_segmentations_all.h5`. The Yolo generated bounding boxes are already given in `data/yolo_bbox`.
+For the generation of the AO code mapping to their bounding boxes, bone segmentation masks are needed. Please download them using the provided link in the original [paper](https://link.springer.com/article/10.1007/s11548-024-03315-8) and store them in `data/raw_segmentations_all.h5`. The Yolo generated bounding boxes are already given in `data/yolo_bbox`. Please unzip `pred0.zip`, `pred1.zip` and `pred2.zip` anf store the .txt-files directly in `data/yolo_bbox`.
 
 For running the models, the extraction of the assignment of the global AO codes to the corresponding fracture bounding boxes must be performed by running 
 
