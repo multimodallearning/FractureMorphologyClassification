@@ -5,6 +5,8 @@
 ## Overview
 In this work, we analyse the classification of fracture morphology of paediatric wrist fractures within the AO/OTA system. Therefore, we propose a method to extract fracture morphology by assigning global AO codes to corresponding fracture bounding boxes. This enables a local multi-class classification of single fracture bounding boxes.  
 
+![overview image](./Overview.png)
+
 ## Environment
 Our code is implemented in PyTorch using the PyTorch Lightning framework.
 Please use the provided requirements file (requirements.txt) file to create the environment.
@@ -20,7 +22,7 @@ Please download the dataset using the provided link in the original [paper](http
 Place the metadata file in the `dataset.csv` file in the `data` folder.
 Place the given ground truth bounding boxes in `GRAZPEDWRI-DX/folder_structure/yolov5/labels` in the `data/gt_bboxes` folder.
 
-Because the segmentation masks were generated in another study, they are provided in `data/raw_segmentations_all.h5`. Also the Yolo generated bounding boxes are already given in `data/yolo_bbox`.
+For the generation of the AO code mapping to their bounding boxes, bone segmentation masks are needed. Please download them using the provided link in the original [paper](https://link.springer.com/article/10.1007/s11548-024-03315-8) and store them in `data/raw_segmentations_all.h5`. The Yolo generated bounding boxes are already given in `data/yolo_bbox`.
 
 For running the models, the extraction of the assignment of the global AO codes to the corresponding fracture bounding boxes must be performed by running 
 
